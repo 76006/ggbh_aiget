@@ -1,0 +1,31 @@
+# Local reverse-engineering material and third-party/game files
+/research/
+/recovered/
+/tools/
+
+# Build output and machine-local IDE state
+**/bin/
+**/obj/
+.vs/
+.idea/
+*.user
+*.suo
+*.log
+*.pdb
+*.dll
+*.exe
+*.tmp
+.env
+.env.*
+
+# Publish this release only; local older packages remain untouched
+/dist/*
+!/dist/NpcMonthActivity-0.3.8/
+!/dist/NpcMonthActivity-0.3.8.zip
+!dist/NpcMonthActivity-0.3.8/Mods/NpcMonthActivity.dll
+
+# Internal implementation notes remain local
+/docs/*
+!/docs/NpcMonthActivity-0.3.8-使用说明.md
+!/docs/CHANGELOG.md
+!/docs/VALIDATION-0.3.8.md

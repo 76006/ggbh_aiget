@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <AutomaticallyUseReferenceAssemblyPackages>false</AutomaticallyUseReferenceAssemblyPackages>
+    <FrameworkPathOverride>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2</FrameworkPathOverride>
+    <LangVersion>latest</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GameDir Condition="'$(GameDir)' == ''">D:\steam\steamapps\common\鬼谷八荒</GameDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../src/NpcActivity/ActivityState.cs" Link="ActivityState.cs" />
+    <Compile Include="../../src/NpcActivity/ActivityEngine.cs" Link="ActivityEngine.cs" />
+    <Compile Include="../../src/NpcActivity/LocalPaths.cs" Link="LocalPaths.cs" />
+    <Compile Include="../../src/NpcActivity/WorldPaths.cs" Link="WorldPaths.cs" />
+    <Compile Include="../../src/NpcActivity/TransitPolicy.cs" Link="TransitPolicy.cs" />
+    <Compile Include="../../src/NpcActivity/Needs.cs" Link="Needs.cs" />
+    <Compile Include="../../src/NpcActivity/LifePolicy.cs" Link="LifePolicy.cs" />
+    <Compile Include="../../src/NpcActivity/CultivationPolicy.cs" Link="CultivationPolicy.cs" />
+    <Compile Include="../../src/NpcActivity/PillPolicy.cs" Link="PillPolicy.cs" />
+    <Compile Include="../../src/NpcActivity/GrowthMaterialPolicy.cs" Link="GrowthMaterialPolicy.cs" />
+    <Reference Include="Newtonsoft.Json"><HintPath>$(GameDir)\MelonLoader\Managed\Newtonsoft.Json.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>
